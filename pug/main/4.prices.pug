@@ -12,7 +12,7 @@
 
 section#prices
 	.container
-		+gt('','Выберите свой вариант участия')
+		+gt('general-title-light','Выберите свой вариант участия')
 		.packets
 			.row
 				.col-md-6.col-sm-6
@@ -21,7 +21,7 @@ section#prices
 							h4.packet-head-title Пакет
 								span Стандарт
 						.packet-body
-							h5.packet-body-titile 5 занятий
+							h5.packet-body-title 5 занятий
 							p.more-button(data-toggle="modal" data-target="#modal") подробнее
 						.packet-footer
 							p.cost.cost-full Стоимость:
@@ -37,7 +37,7 @@ section#prices
 							h4.packet-head-title пакет
 								span VIP
 						.packet-body
-							h5.packet-body-titile 5 занятий
+							h5.packet-body-title 5 занятий
 							p.more-button(data-toggle="modal" data-target="#modal") подробнее
 							ul.packet-body-list
 								li индивидуальное сопровождение
@@ -51,6 +51,6 @@ section#prices
 							p.cost.cost-today Стоимость сегодня:
 								span#today-2= today_2
 							a.button.button-cost(href= link_2 target="_blank")#link-2 Выбрать
-		.timer
+		.timer.hide
 			h4.timer-title До уменьшения скидки:
 			.clock

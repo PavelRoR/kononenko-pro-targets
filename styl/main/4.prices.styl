@@ -1,0 +1,93 @@
+#prices
+	padding 60px 0
+	background-color: #87878E
+	background-image: url(../img/prices_bg.jpg)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	&:before
+		@extend #main:before
+		background-color: rgba(#87878E,.65)
+	.container
+		@extend #main .container
+.packets
+	width 100%
+	max-width 680px
+	margin 0 auto
+.packet
+	padding 20px
+	background-color: rgba(255,255,255,.76)
+	text-align: center
+	width 100%
+	max-width 300px
+	margin 0 auto 25px
+	&-head
+		padding-bottom: 20px
+		&-title
+			span
+				display block
+				font-size: 24px
+				font-family: MWB
+	&-body
+		padding 20px 0
+		border-top: 1px solid
+		border-bottom:  1px solid
+		min-height 260px
+		&-title
+			font-size: 20px
+	&-footer
+		padding-top: 20px
+.more-button
+	font-size: 16px
+	font-family: AV
+	margin-bottom: 10px
+	color #666
+	display: inline-block
+	cursor pointer
+	border-bottom: 1px dashed
+.packet-body-list
+	@extend .lesson-list
+	width 100%
+	max-width 195px
+	margin 0 auto
+	li
+		@extend .lesson-list li
+		font-size: 16px
+.cost
+	font-size: 22px
+	margin-bottom: 15px
+	span
+		display block
+		font-size: 30px
+		font-family: MWB
+	&-full
+		span
+			text-decoration: line-through
+	&-sale
+		color red
+	&-today
+		color #00A600
+.timer-title
+	font-size: 28px
+	font-family: MWB
+	color:  #fff
+	text-align: center
+.flip-clock-wrapper
+	width: 100%
+	max-width 460px
+.flip-clock-divider .flip-clock-label
+	color #fff
+.flip-clock-dot
+	background-color: #2F76D8
+	box-shadow: none
+.flip-clock-wrapper ul li a div div.inn
+	color: #fff
+	background-color: #2F76D8
+	text-shadow: none
+	border-radius: 0
+.flip-clock-wrapper .flip
+	box-shadow: none
+.flip-clock-wrapper ul
+.flip-clock-wrapper ul li a div.down
+	border-radius: 0

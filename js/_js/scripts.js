@@ -89,7 +89,7 @@ $(document).ready(function () {
 
     /* Таймер */
     var clock;
-    var futureDate = new Date("September 6, 2018 00:00 AM UTC+3");
+    var futureDate = new Date("September 12, 2019 00:00 AM UTC+3");
     var currentDate = new Date();
     var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
@@ -103,12 +103,10 @@ $(document).ready(function () {
     }
     if (diff < 0) {
         diff = 0;
-        $('#sale-1').text('1 000р.');
-        $('#sale-2').text('2 000р.');
-        $('#today-1').text('3 900р.');
-        $('#today-2').text('11 900р.');
-        $('#link-1').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3756&clean=true&lg=ru');
-        $('#link-2').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3759&clean=true&lg=ru');
+        $('cost-full span').css('textDecoration', 'none');
+        $('.cost-sale, .cost-today, .timer').remove();
+        $('#link-1').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3764&clean=true&lg=ru');
+        $('#link-2').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3766&clean=true&lg=ru');
     }
     clock = $('.clock').FlipClock(diff, {
         clockFace: 'HourlyCounter',
@@ -116,12 +114,10 @@ $(document).ready(function () {
         language: 'ru',
         callbacks: {
             stop: function () {
-                $('#sale-1').text('1 000р.');
-                $('#sale-2').text('2 000р.');
-                $('#today-1').text('3 900р.');
-                $('#today-2').text('11 900р.');
-                $('#link-1').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3756&clean=true&lg=ru');
-                $('#link-2').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3759&clean=true&lg=ru');
+                $('cost-full span').css('textDecoration', 'none');
+                $('.cost-sale, .cost-today, .timer').remove();
+                $('#link-1').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3764&clean=true&lg=ru');
+                $('#link-2').attr('href', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3766&clean=true&lg=ru');
             }
         },
     });
