@@ -1,3 +1,7 @@
+AV = 'AvenirNextCyr', sans-serif
+MW = 'Merriweather', serif
+MWB = 'MerriweatherBold', serif
+
 @font-face {
 	font-family: 'AvenirNextCyr';
 	src: url('../fonts/AvenirNextCyr.eot');
@@ -46,7 +50,7 @@
 	outline none
 body
 	font-size: 18px
-	font-family: 'Merriweather';
+	font-family: MW
 	line-height: 1.4
 a
 	color: #fefefe
@@ -103,13 +107,14 @@ footer
 	background-image: linear-gradient( 0deg, rgb(224,26,16) 0%, rgb(171,28,21) 100%);
 	box-shadow: 0px 3px 55.8px 6.2px rgba(0, 0, 0, 0.32);
 	width: 100%
-	max-width: 370px;
-	height: 45px;
-	line-height: 45px;
+	max-width: 300px;
+	height: 50px;
+	line-height: 50px;
 	color: rgb(255, 255, 255);
 	text-align: center;
 	cursor pointer
 	text-decoration: none
+	text-transform: uppercase
 	&:focus
 		text-decoration: none
 		color rgb(255, 255, 255);
@@ -120,6 +125,12 @@ footer
 		color rgb(255, 255, 255);
 		background-color: rgb(171,28,21)
 		background-image: linear-gradient( 180deg, rgb(224,26,16) 0%, rgb(171,28,21) 100%);
+.general-title
+	font-size: 30px;
+	font-family: MWB
+	text-align: center;
+	margin-bottom: 35px
+
 @import 'main/0.header'
 @import 'main/1.main'
 @import 'main/2.plan'
